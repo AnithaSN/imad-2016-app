@@ -1,8 +1,12 @@
-var button=document.getElementById('counter');
-var counter =0;
-button.onclick = function(){
-    
-counter = counter + 1;
-var span =document.getElementById('count');
-span.innerHTML = counter.toString();
-};
+<script type="text/javascript">
+ (function ()
+  {
+            var login, user = {};
+            login = document.getElementById("login");
+            login.onsubmit = function (event) {
+                event.preventDefault();
+                user.username = document.getElementById("username").value;
+                user.password = document.getElementById("psw").value;
+            }
+        }());
+</script>
