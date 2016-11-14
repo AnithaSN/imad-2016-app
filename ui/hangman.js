@@ -50,7 +50,7 @@ var pruefeZeichen = function(){
 		gerateneBuchstaben.appendChild(buchstabe); 
 		fehler++;
 		var hangman = document.getElementById("hangman");
-    hangman.src = "http://www.writteninpencil.de/Projekte/Hangman/hangman" + fehler + ".png";
+    hangman.src = https://i.ytimg.com/vi/Cz_XFY6CZ1c/maxresdefault.jpg;
 	}
 	
 	
