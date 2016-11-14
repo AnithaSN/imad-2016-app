@@ -30,7 +30,7 @@ function printRatewort(){
 var pruefeZeichen = function(){
 	var f = document.rateformular; 
 	var b = f.elements["ratezeichen"]; 
-	var zeichen = b.value; // the letter provided by the user
+	var zeichen = b.value; 
 	zeichen = zeichen.toUpperCase();
 	for (var i = 0; i < lsgwort.length; i++){
 		if(lsgwort[i] === zeichen){
