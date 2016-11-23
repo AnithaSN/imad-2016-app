@@ -1,8 +1,31 @@
 <!doctype html>
 <html>
-    <head>
+        <head>
         <link href="/ui/style.css" rel="stylesheet" />
-    </head>
+    
+    <script type="text/javascript">
+function validate(form)
+{
+	if(form.text.value=="")
+	{
+		alert("enter ur name pls");
+		return false;
+	}
+	var a1=form.pass1.value;
+	var a2=form.pass2.value;
+	if((a1!=a2)||(a1,a2==""))
+	{
+		alert("password do not match/should not empty");
+		return false;
+	}
+	var a=form.phone.value;
+	if(a.length>10||a.length<10)
+	{
+		alert("enter valid phone number");
+		return false;
+	}
+</script>
+</head>
     <body>
         <div class="container">
             <div class="drop">
