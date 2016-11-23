@@ -5,7 +5,7 @@ var lsgwoerter = [
   ["E","D","U","C","A","T","I","O","N"],
   ["C","H","O","C","O","L","A","T","E"],
   ["G","E","R","M","A","N","Y"]
-]
+];
 var random = Math.floor((Math.random()*(lsgwoerter.length-1))); 
 
 var lsgwort = lsgwoerter[random]; // the word to guess will be chosen from the array above
@@ -27,30 +27,32 @@ function printRatewort(){
 }
 
 
-var pruefeZeichen = function(){
+var pruefeZeichen = function()
+{
 	var f = document.rateformular; 
 	var b = f.elements["ratezeichen"]; 
 	var zeichen = b.value; 
 	zeichen = zeichen.toUpperCase();
-	for (var i = 0; i < lsgwort.length; i++){
+	for (var i = 0; i < lsgwort.length; i++)
+	{
 		if(lsgwort[i] === zeichen){
 			ratewort[i] = zeichen + " ";
 			var treffer = true;
-		}
-	b.value = "";
 	}
+	b.value = "";
+}
 	
 	var ratefeld = document.getElementById("ratefeld");
 	ratefeld.innerHTML=""; 
 	printRatewort();
-	
+
 	if(!treffer){
 		var gerateneBuchstaben = document.getElementById("gerateneBuchstaben");
 		var buchstabe = document.createTextNode(" " + zeichen);
 		gerateneBuchstaben.appendChild(buchstabe); 
 		fehler++;
 		var hangman = document.getElementById("hangman");
-    hangman.src = https://i.ytimg.com/vi/Cz_XFY6CZ1c/maxresdefault.jpg;
+    hangman.src =" https://i.ytimg.com/vi/Cz_XFY6CZ1c/maxresdefault.jpg ";
 	}
 	
 	
@@ -67,7 +69,7 @@ var pruefeZeichen = function(){
 	if(fehler === 6){
 		window.alert("Uh...I guess you're dead now.");
 	}
-}
+
 
 function init(){
 	printRatewort();
