@@ -1,11 +1,33 @@
-<html>
+<html><head>
+  <script type="text/javascript">
+function validate(form)
+{
+	if(form.text.value=="")
+	{
+		alert("enter ur name pls");
+		return false;
+	}
+	var a1=form.pass1.value;
+	var a2=form.pass2.value;
+	if((a1!=a2)||(a1,a2==""))
+	{
+		alert("password do not match/should not empty");
+		return false;
+	}
+	var a=form.phone.value;
+	if(a.length>10||a.length<10)
+	{
+		alert("enter valid phone number");
+		return false;
+	}
+</script></head>
 <body>
 <form method="post" name="form" action=ref.html>
                 Name<input type="text" name="text" /><br />
                 Password<input type="password" name="pass1" /><br />
                 Re-enter Password:<input type="password" name="pass2" /><br />
                 Phone no<input type="text" name="phone" /><br />
-                Email-Id:& <input type="text" name="email" /><br />
+                Email-Id: <input type="text" name="email" /><br />
 </form>
 </body>
 </html>
